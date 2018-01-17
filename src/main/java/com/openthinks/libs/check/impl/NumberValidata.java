@@ -1,4 +1,4 @@
-package openthinks.libs.check.impl;
+package com.openthinks.libs.check.impl;
 
 /**
  * 数字验证码类
@@ -18,12 +18,12 @@ public class NumberValidata extends GenicValidata {
 	 * 生成指定长度的数字验证码
 	 * 
 	 * @param len
+	 *            数字验证码长度
 	 */
 	public NumberValidata(int len) {
 		super(len);
 	}
 
-	@Override
 	/**
 	 * 实现父类中的抽象方法,生成随机位数的数字验证串
 	 */

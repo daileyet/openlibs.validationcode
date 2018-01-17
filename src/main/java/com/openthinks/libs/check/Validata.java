@@ -1,7 +1,7 @@
 /**
  * 验证码接口包
  */
-package openthinks.libs.check;
+package com.openthinks.libs.check;
 
 /**
  * 验证码接口
@@ -20,7 +20,7 @@ public interface Validata {
 	/**
 	 * 获取上次的随机验证字符串
 	 * 
-	 * @return
+	 * @return 最近一次的验证字符串
 	 */
 	public String getLastCheck();
 

@@ -1,4 +1,4 @@
-package openthinks.libs.check.paint;
+package com.openthinks.libs.check.paint;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -11,8 +11,8 @@ import java.io.OutputStream;
 
 import javax.imageio.ImageIO;
 
-import openthinks.libs.check.Validata;
-import openthinks.libs.check.util.CkUtil;
+import com.openthinks.libs.check.Validata;
+import com.openthinks.libs.check.util.CkUtil;
 
 /**
  * 验证图片类
@@ -156,7 +156,7 @@ public class ImageFace {
 	/**
 	 * 获取图片宽度
 	 * 
-	 * @return
+	 * @return 图片宽度
 	 */
 	public int getWidth() {
 		return width;
@@ -165,7 +165,7 @@ public class ImageFace {
 	/**
 	 * 设置图片宽度
 	 * 
-	 * @param width
+	 * @param width 图片宽度
 	 */
 	public void setWidth(int width) {
 		this.width = width;
@@ -174,7 +174,7 @@ public class ImageFace {
 	/**
 	 * 获取图片高度
 	 * 
-	 * @return
+	 * @return 图片高度
 	 */
 	public int getHeight() {
 		return height;
@@ -183,7 +183,7 @@ public class ImageFace {
 	/**
 	 * 设置图片高度
 	 * 
-	 * @param height
+	 * @param height 图片高度
 	 */
 	public void setHeight(int height) {
 		this.height = height;
@@ -256,7 +256,7 @@ public class ImageFace {
 	/**
 	 * 设定前景色是否随机改变
 	 * 
-	 * @param autoFgColor
+	 * @param autoFgColor ture/false
 	 */
 	public void setAutoFgColor(boolean autoFgColor) {
 		if (manuColor == false)
@@ -266,7 +266,7 @@ public class ImageFace {
 	/**
 	 * 获取字体大小
 	 * 
-	 * @return int
+	 * @return int 字体大小
 	 */
 	public int getFontSize() {
 		return fontSize;
@@ -275,7 +275,7 @@ public class ImageFace {
 	/**
 	 * 设定字体大小
 	 * 
-	 * @param fontSize
+	 * @param fontSize 字体大小
 	 */
 	public void setFontSize(int fontSize) {
 		this.fontSize = fontSize;
@@ -284,7 +284,7 @@ public class ImageFace {
 	/**
 	 * 验证码字体是否随机改变 默认随机变化
 	 * 
-	 * @param autoFontSize
+	 * @return true/false
 	 */
 	public boolean isAutoFontSize() {
 		return autoFontSize;
@@ -293,7 +293,7 @@ public class ImageFace {
 	/**
 	 * 设定字体是否随机改变
 	 * 
-	 * @param autoFontSize
+	 * @param autoFontSize true/false
 	 */
 	public void setAutoFontSize(boolean autoFontSize) {
 		this.autoFontSize = autoFontSize;

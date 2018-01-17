@@ -1,10 +1,10 @@
 /**
  * 验证码接口实现包
  */
-package openthinks.libs.check.impl;
+package com.openthinks.libs.check.impl;
 
-import openthinks.libs.check.Validata;
-import openthinks.libs.check.util.CkUtil;
+import com.openthinks.libs.check.Validata;
+import com.openthinks.libs.check.util.CkUtil;
 
 /**
  * 默认验证码实现类
@@ -34,15 +34,17 @@ public abstract class GenicValidata implements Validata {
 	 * 随机生成指定位验证码字符串
 	 * 
 	 * @param len
+	 *            验证码长度
 	 */
 	public GenicValidata(int len) {
 		ck = new CkUtil();
 		setLen(len);
 	}
 
-	@Override
 	/**
 	 * 获取上次所生成的验证字符串
+	 * 
+	 * @return 上次所生成的验证字符串
 	 */
 	public String getLastCheck() {
 		return lastCheck;
@@ -52,18 +54,17 @@ public abstract class GenicValidata implements Validata {
 	 * 设置上次所生成的验证字符串
 	 * 
 	 * @param lastCheck
+	 *            最近一次的验证字符串
 	 */
 	void setLastCheck(String lastCheck) {
 		this.lastCheck = lastCheck;
 	}
 
-	@Override
-	public abstract String create();
-
 	/**
 	 * 设置生成的字符长度
 	 * 
 	 * @param len
+	 *            验证码长度
 	 */
 	public void setLen(int len) {
 		if (len < 1)
@@ -75,7 +76,7 @@ public abstract class GenicValidata implements Validata {
 	/**
 	 * 获取生成验证字符串的长度
 	 * 
-	 * @return
+	 * @return 验证码长度
 	 */
 	public int getLen() {
 		return len;

@@ -1,4 +1,4 @@
-package openthinks.libs.check.util;
+package com.openthinks.libs.check.util;
 
 import java.util.Arrays;
 
